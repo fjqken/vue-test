@@ -21,7 +21,7 @@
 <!--            <div @click.capture="divEven" style="border:1px #188eee solid;">-->
 <!--                <a href="www.baidu.com" @click.prevent="aEven">百度链接</a>-->
 <!--            </div>-->
-            <!--self的使用：只有点击他本身时才去执行，点击他的子元素不去执行1-->
+            <!--self的使用：只有点击他本身时才去执行，点击他的子元素不去执行-->
 <!--            <div @click.self="divEven" style="border:1px #188eee solid;">-->
 <!--            <a href="www.baidu.com" @click.prevent="aEven">百度链接</a>-->
 <!--            </div>-->
