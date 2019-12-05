@@ -16,7 +16,8 @@
   -moz-osx-font-smoothing grayscale
   text-align center
   color #2c3e50
-  height 1080px
+  height 100%
+
 #nav
   padding 30px
     font-weight bold

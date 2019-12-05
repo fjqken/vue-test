@@ -1,6 +1,9 @@
 <template>
     <div class="login">
         <div class="login1">
+            <div class="login_title">
+                 <div class="content">云智易测试平台</div>
+            </div>  
             <form>
                 <div class="account">
                     <span>账号</span>
@@ -14,7 +17,6 @@
                 </div>
                 <div>
                     <input type="button" value="提交" @click="post1">
-
                 </div>
             </form>
             <a href="https://dormousehole.readthedocs.io/en/latest/">快去看看flask</a>
@@ -26,7 +28,7 @@
 <!--            <a href="www.baidu.com" @click.prevent="aEven">百度链接</a>-->
 <!--            </div>-->
             <!--第一种情况,先执行子盒子，再执行大盒子的-->
-<!--            <div @click="divEven" style="border:1px #188eee solid;">-->
+<!--            <div @click="divEven" style="border:1px #188eee solid;">--> 
 <!--            <a href="www.baidu.com" @click="aEven">百度链接</a>-->
 <!--            </div>-->
 <!--            stop的使用：阻止事件冒泡的发生-->
@@ -35,13 +37,13 @@
 <!--            </div>-->
 
 <!--            prevent的使用：阻止默认事件的发生-->
-            <div @click="divEven" style="border:1px #188eee solid;">
+            <!-- <div @click="divEven" style="border:1px #188eee solid;">
             <a href="https://www.baidu.com" @click.stop.prevent="aEven">百度链接</a>
-            </div>
+            </div> -->
 <!--                只能支持触发一次-->
-            <div @click.once="divEven" style="border:1px #188eee solid;">
+            <!-- <div @click.once="divEven" style="border:1px #188eee solid;">
                 <a href="https://www.baidu.com" @click.stop.prevent="aEven">百度链接</a>
-            </div>
+            </div> -->
         </div>
 
     </div>
@@ -50,15 +52,34 @@
 
 <style scoped lang="stylus">
     .login
-        position relative
-        background-image: url('../../image/77.jpeg')
-        background-size: 100%
+        // position relative
+        background-image: url('../../image/loginbackground.jpeg')
+        background-position:center
+        background-size: cover
+        background-repeat no-repeat    
         // background #42b983
+        background-attachment: scroll
         height 100%
         width 100%
+        overflow-y:scroll;
 
     .login1
-        padding-top 40%
+        // padding-top 60px
+        top 400px
+        margin-right  700px
+        margin-left 700px
+        background #fff
+        position relative
+        height 300px
+        // width  400px
+
+    .login_title
+        overflow hidden 
+
+
+    .content
+        margin 30px 0 25px
+        font-size 20px
 
     .account
         margin-bottom 8px
