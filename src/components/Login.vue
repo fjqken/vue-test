@@ -64,14 +64,13 @@
         overflow-y:scroll;
 
     .login1
-        // padding-top 60px
-        top 400px
-        margin-right  700px
-        margin-left 700px
+        left:50%
+        top:50%
         background #fff
-        position relative
+        position absolute
+        transform translate(-50%, -50%)
         height 300px
-        // width  400px
+        width  400px
 
     .login_title
         overflow hidden 
